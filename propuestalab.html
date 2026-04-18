@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aumento de Sueldo</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #dcdcdc; /* FONDO GRIS */
+    }
+
+    header {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        background: rgb(110, 96, 146);
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.4s, filter 0.4s;
+    }
+
+    .card img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #1e8449;
+    }
+
+    input {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* ANIMACIÓN EVOLUTIVA */
+    .evolucion {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px 0;
+        animation: mover 2s infinite alternate;
+    }
+
+    @keyframes mover {
+        from { transform: translateX(0); }
+        to { transform: translateX(10px); }
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📈 Propuesta laboral</h1>
+    <p>🚧 Evolucionaremosy crearemos un imperio</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👷 Empleado</h2>
+        <p><strong>Nombre:</strong> Jonathan obando  </p>
+        <p><strong>Sueldo actual:</strong> $550</p>
+        <p><strong>Aumento:</strong> <span id="nuevoSueldo">$175</span></p>
+    </div>
+
+    <div class="card">
+        <h2>🧠 Funciones</h2>
+        <ul id="funciones">
+            <li>🔧 Ingreso de facturas
+            <li>📦 Control codigos de systema  
+               <li>📦 Compra productos y revision de utilidades
+                 <li>📦 Cotizaciones en productos especiales
+                     <li>📦 Acompañamiento a cierre de venta(negociaciones importantes)
+                         <li>📦 Acompañamiento inventarios programados
+                            <li>📦 Posteo imagenes con producto de la semana con descuento
+        </ul>
+       
+    </div>
+
+    <div class="evolucion">
+        🧍‍♂️ ➜ 👷 ➜ 🏗️ ➜ 🚀
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+            <h2>🏗️ Proyecto 1</h2>
+            <p>Al tener el control absoluto de estos ingresos , se va a lograr mejor control de precios , e incluso calculo exactos de utilidades , sea con proveedor X o Y, adicional se va a disponer el control del stock conjuntamente con  responsable de Bodega </p>
+        </div>
+
+        <div class="card">
+            <img src="logo local.jpg">
+            <h2>👷 Unidos hacemos la fuerza</h2>
+            
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+            <h2>🚧 Proyecto 2</h2>
+            <p>Optimización de recursos</p>
+            <p>Entregas a tiempo</p>
+            <p>Compras a tiempo</p>
+            <p>Cliente feliz</p>
+        </div>
+
+    </div>
+
+   
+
+</div>
+
+<script>    
+</script>
+
+</body>
+</html>
